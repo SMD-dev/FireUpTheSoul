@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>GodIsMyCompass</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118836847-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118836847-1');
+    </script>
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="container">
+            <img src="images/logo2.png" class="logo" alt="God is My Guide Logo" style="cursor: pointer" onclick="window.location='./index.html'"
+            />
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="order.html">Order</a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="about.html#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Work -->
+    <div class="wrapper style2">
+        <article id="work">
+            <br />
+            <br />
+            <br />
+            <header>
+                <h2></h2>
+            </header>
+            <div class="row" style="margin: 0">
+                <!-- Add this for an amazon type zoom box -->
+                <!-- onmousemove="zoomIn(event)" onmouseout="zoomOut()" -->
+                <!-- <div id="overlay" onmousemove="zoomIn(event)"></div> -->
+                <!-- <div class=""></div> -->
+                <div class="row 6u 12u(mobile)">
+                    <div class="helper1">
+                        <img id="imgZoom" class="12u 12u(mobile) mySlides helper2" src="./images/compass1d.png">
+                        <img id="imgZoom" class="12u 12u(mobile) mySlides helper2" src="./images/compass2d.png">
+                        <img id="imgZoom" class="12u 12u(mobile) mySlides helper2" src="./images/compass3d.png">
+                    </div>
+                    <img id="img1" class="demo w3-opacity w3-hover-opacity-off 4u" src="./images/compass1d.png" onclick="currentDiv(1)">
+                    <img id="img1" class="demo w3-opacity w3-hover-opacity-off 4u" src="./images/compass2d.png" onclick="currentDiv(2)">
+                    <img id="img1" class="demo w3-opacity w3-hover-opacity-off 4u" src="./images/compass3d.png" onclick="currentDiv(3)">
+                </div>
+                <div class="6u 12u(mobile)" style="text-align: left; padding-top: 0;">
+                    <h2>God is My Guide&trade; Compass</h2>
+                    <h3>$29.95 / Free Shipping</h3>
+                    <p>The
+                        <i>God is My Guide</i> Compass is a unique work of craftsmanship. At the position of true north we have
+                        added the word, GOD, for He is the
+                        <b>best guide</b> to our heavenly home. Indeed, the Lord will make our path straight if only we will
+                        acknowledge Him in all our ways (Proverbs 3:5-6).</p>
+                    <p>The
+                        <i>God is My Guide</i> Compass works like a normal compass and fits nicely in a pocket or purse, but
+                        it is also designed to show as a beautiful
+                        <b>display piece</b> on a desk or shelf. It serves as a means to remember the Lord always and to keep
+                        our focus on Him--our Guide and True North.</p>
+                    <p> The compass is a high quality, antique replica of an original compass trusted by mariners over the ages.
+                        The case is made of the finest
+                        <b>solid brass</b>; the compass face is covered by beveled glass. It is a little over two inches in
+                        diameter and comes with a wire diplay stand and a cotton drawstring bag. Engraved on the reverse
+                        side is the inspirational scripture from Joshua 1:9.
+                    </p>
+                    <p> The compass is a
+                        <b>loving gift</b> of faith and discipleship for those who place their trust in God, and is perfect
+                        for any occasion: birthday, baptism, Duty to God award, wedding, anniversary, Mother's and Father's
+                        day, etc. It is a keepsake that will be treasured from generation to generation.
+                    </p>
+
+                    <div class="row">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="Z4LTTWM2FTN8W">
+                            <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" border="0" name="submit"
+                                alt="Check out with PayPal">
+                        </form>
+                        <a class="3u" href="https://www.amazon.com/Compass-Display-Stand-Unique-Uplifting-Heavenly/dp/B06Y3LKQZG/ref=sr_1_2?ie=UTF8&qid=1524957313&sr=8-2&keywords=god+is+my+guide+compass"
+                            target="_blank">
+                            <img src="./images/amazon.png" class="10u 12u(mobile)" style="width: auto; height: 3em;" />
+                        </a>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="product-quantity">
+                            <label>Quantity: </label>
+                            <input id="quantity" type="number" style="width: 3em" value="1" min="1">
+                            <p>x 29.95 = $
+                                <span id="total">29.95</span>
+                            </p>
+                        </div>
+                        <form action="https://wt-c40ee0ad55bec3eb8390a1a9a59da82f-0.sandbox.auth0-extend.com/stripe-payment-fireupthesoul/payment"
+                            method="POST" id="stripe-form">
+                            <input type="hidden" name="amount" value="2995" />
+                            <input type="hidden" name="currency" value="usd" />
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_2ecVVzTv8KrdEbbmX3ZDzyxB" data-amount="2995"
+                                data-zip-code="true" data-currency="usd" data-billing-address="true" data-shipping-address="true"
+                                data-name="Fire Up the Soul" data-description="God is My Guide Compass" data-image="https://godismyguidecompass.com/images/logo2.png"
+                                data-locale="auto">
+                                </script>
+                        </form>
+                    </div>
+                    <img src="./images/positive.png" />
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="wrapper style4">
+        <article id="contact" class="container 75%">
+            <div class="row">
+                <div class="12u">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/FireUpTheSoul/" class="icon fa-facebook">
+                                <span class="label">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/pin/357614026643280381/" class="icon fa-pinterest">
+                                <span class="label">Pinterest</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html#contact" class="icon fa-envelope-o">
+                                <span class="label">Email</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr />
+                </div>
+            </div>
+            <footer>
+                <ul class="social">
+                    <li>
+                        <image src="./images/creditcards/amex.png" class="icon" />
+                    </li>
+                    <li>
+                        <image src="./images/creditcards/diners.png" class="icon" />
+                    </li>
+                    <li>
+                        <image src="./images/creditcards/discover.png" class="icon" />
+                    </li>
+                    <li>
+                        <image src="./images/creditcards/jcb.png" class="icon" />
+                    </li>
+                    <li>
+                        <image src="./images/creditcards/mastercard.png" class="icon" />
+                    </li>
+                    <li>
+                        <image src="./images/creditcards/paypal.png" class="icon" />
+                    </li>
+                    <li>
+                        <image src="./images/creditcards/visa.png" class="icon" />
+                    </li>
+                </ul>
+                <ul id="copyright">
+                    <li>Copyright &copy; 2018 by FireUpTheSoul</li>
+                    <li>Design:
+                        <a href="https://superiormarketingdesign.com/">Superior Marketing & Design</a>
+                    </li>
+                    <li>
+                        <a href="refund.html">Refund Policy</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </footer>
+        </article>
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script src="assets/js/zoom.js"></script> -->
+    <script src="assets/js/fade.js"></script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="assets/js/stripe-form.js"></script>
+    <!-- jQuery and Styling -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
