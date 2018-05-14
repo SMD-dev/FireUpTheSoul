@@ -9,6 +9,15 @@
   transition: all 0.5s ease-in-out;
 }
 
+img#imgZoom:hover {
+  position: relative;
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  z-index: 1000;
+}
+
 .raised {
   position: relative;
   bottom: 13em;
@@ -244,8 +253,24 @@ body {
     bottom: 0;
   }
 
+  .mobile-raised {
+    padding-top: 5em;
+  }
+
+  .disappear {
+    display: none;
+  }
+
   .inside-image {
     width: 25em;
+  }
+
+  img#imgZoom:hover {
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
   }
 
   .container.\31 25\25 {
@@ -1009,6 +1034,10 @@ body {
 }
 
 @media screen and (max-width: 736px) {
+  .disappear {
+    display: none;
+  }
+
   .inside-image {
     width: 25em;
   }
@@ -1016,6 +1045,18 @@ body {
   .raised {
     position: relative;
     bottom: 0;
+  }
+
+  .mobile-raised {
+    padding-top: 5em;
+  }
+
+  img#imgZoom:hover {
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
   }
 
   .row > * {
@@ -2147,6 +2188,14 @@ ol.default li {
 /* Mobile */
 
 @media screen and (max-width: 736px) {
+  .mobile-raised {
+    padding-top: 5em;
+  }
+
+  .disappear {
+    display: none;
+  }
+
   .inside-image {
     width: 25em;
   }
@@ -2155,6 +2204,15 @@ ol.default li {
     position: relative;
     bottom: 0;
   }
+
+  img#imgZoom:hover {
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  
   /* Basic */
 
   body,
@@ -2346,15 +2404,6 @@ ol.default li {
   background-repeat: no-repeat;
 }
 
-img#imgZoom:hover {
-  position: relative;
-  -webkit-transform: scale(1.6);
-  -ms-transform: scale(1.6);
-  -o-transform: scale(1.6);
-  transform: scale(1.6);
-  z-index: 1000;
-}
-
 * {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -2392,4 +2441,25 @@ img#imgZoom:hover {
 
 .demo {
   cursor: pointer;
+}
+
+.module {
+  display: invisible;
+  opacity: 0;
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+    display: visible;
+    opacity: 1;
+  }
 }
