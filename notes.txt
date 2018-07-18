@@ -1,0 +1,6 @@
+fix compass on homepage to not show on top of black
+swap order compass out for homepage compass
+* A PayPal account is Not
+PayPal
+Not bolded
+get rid of dancing girls

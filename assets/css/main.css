@@ -263,6 +263,8 @@ body {
 
   .inside-image {
     width: 25em;
+    z-index: 2;
+    position: relative;
   }
 
   img#imgZoom:hover {
@@ -1040,6 +1042,8 @@ body {
 
   .inside-image {
     width: 25em;
+    z-index: 2;
+    position: relative;
   }
 
   .raised {
@@ -2198,6 +2202,8 @@ ol.default li {
 
   .inside-image {
     width: 25em;
+    z-index: 2;
+    position: relative;
   }
 
   .raised {
@@ -2393,6 +2399,8 @@ ol.default li {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  z-index: 2;
+  position: relative;
 }
 
 #overlay {
@@ -2462,4 +2470,8 @@ ol.default li {
     display: visible;
     opacity: 1;
   }
+}
+
+.underline {
+  text-decoration: underline;
 }
